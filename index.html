@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="./src/index.js"></script>
+  <title>drag select test</title>
+</head>
+<body>
+  <h2>drag select test on image area</h2>
+  <button onclick="startSelect()">点击添加选择区域</button>
+  <div class="wrap">
+    <ul class="conts">
+      <li class="t1">
+      </li>
+      <li class="t2"></li>
+      <!-- <li class="t3"></li>
+      <li class="t4"></li>
+      <li class="t5"></li> -->
+    </ul>
+    <div id="cloneDom">
+      <div class="select" data-select="yes">
+        <span class="dot left-up move-XY"></span>
+        <span class="dot upM moveY"></span>
+        <span class="dot upR move-XY"></span>
+        <span class="dot left-M moveX"></span>
+        <span class="dot left-D move-XY"></span>
+        <span class="dot downM moveY"></span>
+        <span class="dot downR move-XY"></span>
+        <span class="dot rightM moveX"></span>
+      </div>
+    </div>
+    <div id="rightMenu">
+      <ul>
+        <li class="delIt">删除</li>
+        <li class="delAll">全部删除</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <script src="./src/index.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,79 @@
+.conts li{
+  width:600px;
+  height: 200px;
+  background: #999;
+  position: relative;
+  margin-bottom: 10px;
+}
+.conts li .select{
+  background:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  /* min-width:100px; */
+  /* min-height: 200px; */
+  cursor: all-scroll;
+}
+.conts li .select .dot{
+  /* cursor: pointer; */
+  position: absolute;
+  width:10px;
+  height: 10px;
+  border:1px solid #fff;
+  border-radius: 50%;
+}
+.select .left-up{
+  cursor: nw-resize;
+  left:0px;
+  top:0px;
+  transform: translate(-50%,-50%)
+}
+.select .upM{
+  cursor:s-resize;
+  left:50%;
+  top:-1px;
+  transform: translate(-50%,-50%)
+}
+.select .upR{
+  cursor:ne-resize;
+  right:0px;
+  top:0px;
+  transform: translate(50%,-50%)
+}
+.select .left-M{
+  cursor: e-resize;
+  left:0px;
+  top:50%;
+  transform: translate(-50%,-50%)
+}
+.select .left-D{
+  cursor:ne-resize;
+  left:0px;
+  bottom:0px;
+  transform: translate(-50%,50%)
+}
+.select .downM{
+  cursor:s-resize;
+  left:50%;
+  bottom:0px;
+  transform: translate(-50%,50%)
+}
+.select .downR{
+  cursor: nw-resize;
+  right:0px;
+  bottom:0px;
+  transform: translate(50%,50%)
+}
+.select .rightM{
+  cursor: e-resize;
+  right:0px;
+  top:50%;
+  transform: translate(50%,-50%)
+}
+/* ---右键菜单style--- */
+#rightMenu{
+  position: fixed;
+  background: #333;
+  border: 1px solid #222;
+  line-height: 20px;
+  color:#fff;
+  display: none;
+}
